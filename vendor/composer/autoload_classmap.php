@@ -1157,6 +1157,7 @@ return array(
     'Rector\\ChangesReporting\\Contract\\Output\\OutputFormatterInterface' => $baseDir . '/packages/ChangesReporting/Contract/Output/OutputFormatterInterface.php',
     'Rector\\ChangesReporting\\Output\\ConsoleOutputFormatter' => $baseDir . '/packages/ChangesReporting/Output/ConsoleOutputFormatter.php',
     'Rector\\ChangesReporting\\Output\\JsonOutputFormatter' => $baseDir . '/packages/ChangesReporting/Output/JsonOutputFormatter.php',
+    'Rector\\ChangesReporting\\Output\\CheckstyleOutputFormatter' => $baseDir . '/packages/ChangesReporting/Output/CheckstyleOutputFormatter.php',
     'Rector\\ChangesReporting\\ValueObjectFactory\\ErrorFactory' => $baseDir . '/packages/ChangesReporting/ValueObjectFactory/ErrorFactory.php',
     'Rector\\ChangesReporting\\ValueObjectFactory\\FileDiffFactory' => $baseDir . '/packages/ChangesReporting/ValueObjectFactory/FileDiffFactory.php',
     'Rector\\ChangesReporting\\ValueObject\\RectorWithLineChange' => $baseDir . '/packages/ChangesReporting/ValueObject/RectorWithLineChange.php',

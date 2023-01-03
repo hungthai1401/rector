@@ -1402,6 +1402,7 @@ class ComposerStaticInit69218b400df3ef01ae64d32d7d73ed81
         'Rector\\ChangesReporting\\Contract\\Output\\OutputFormatterInterface' => __DIR__ . '/../..' . '/packages/ChangesReporting/Contract/Output/OutputFormatterInterface.php',
         'Rector\\ChangesReporting\\Output\\ConsoleOutputFormatter' => __DIR__ . '/../..' . '/packages/ChangesReporting/Output/ConsoleOutputFormatter.php',
         'Rector\\ChangesReporting\\Output\\JsonOutputFormatter' => __DIR__ . '/../..' . '/packages/ChangesReporting/Output/JsonOutputFormatter.php',
+        'Rector\\ChangesReporting\\Output\\CheckstyleOutputFormatter' => __DIR__ . '/../..' . '/packages/ChangesReporting/Output/CheckstyleOutputFormatter.php',
         'Rector\\ChangesReporting\\ValueObjectFactory\\ErrorFactory' => __DIR__ . '/../..' . '/packages/ChangesReporting/ValueObjectFactory/ErrorFactory.php',
         'Rector\\ChangesReporting\\ValueObjectFactory\\FileDiffFactory' => __DIR__ . '/../..' . '/packages/ChangesReporting/ValueObjectFactory/FileDiffFactory.php',
         'Rector\\ChangesReporting\\ValueObject\\RectorWithLineChange' => __DIR__ . '/../..' . '/packages/ChangesReporting/ValueObject/RectorWithLineChange.php',

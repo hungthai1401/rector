@@ -1,5 +1,5 @@
 {
-    "name": "rector/rector",
+    "name": "ncp/rector",
     "description": "Instant Upgrade and Automated Refactoring of any PHP code",
     "license": "MIT",
     "bin": [
