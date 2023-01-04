@@ -26,6 +26,7 @@ final class RectorWithLineChange implements SerializableInterface
      * @var int
      */
     private $line;
+
     /**
      * @param string|\Rector\Core\Contract\Rector\RectorInterface $rectorClass
      */
@@ -44,6 +45,19 @@ final class RectorWithLineChange implements SerializableInterface
     {
         return $this->rectorClass;
     }
+
+    public function getRectorDefinitionsDescription(): string
+    {
+        $rector = new \ReflectionClass($this->rectorClass);
+        $rector = $rector->newInstanceWithoutConstructor();
+        return $rector->getRuleDefinition()->getDescription();
+    }
+
+    public function getLine(): int
+    {
+        return $this->line;
+    }
+
     /**
      * @param array<string, mixed> $json
      * @return $this
