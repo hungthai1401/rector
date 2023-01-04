@@ -53,7 +53,17 @@ final class CheckstyleOutputFormatter implements OutputFormatterInterface
     private function writeFileErrors(FileDiff $fileDiff): void
     {
         $this->symfonyStyle->writeln(sprintf('<file name="%s">', $this->escape($fileDiff->getRelativeFilePath())));
+        $errorRules = [];
         foreach ($fileDiff->getRectorChanges() as $rectorChange) {
+            if (! isset($errorRules[$rectorChange->getRectorClass()])) {
+                $errorRules[$rectorChange->getRectorClass()] = [];
+            }
+
+            if (in_array($rectorChange->getLine(), $errorRules[$rectorChange->getRectorClass()])) {
+                continue;
+            }
+
+            $errorRules[$rectorChange->getRectorClass()][] = $rectorChange->getLine();
             $message = $rectorChange->getRectorDefinitionsDescription() . ' (Reported by: ' . $rectorChange->getRectorClass() . ')';
             $message = $this->escape($message);
 
